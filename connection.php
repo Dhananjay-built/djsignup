@@ -1,16 +1,12 @@
 <?php
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "mysql_signup";
+$server = "sql305.epizy.com";
+$database = "	epiz_29179932";
+$password = "lkF52qFgtKWm";
+$dbname = "epiz_29179932_signup_database_djwebsites";
 
-if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
-
-
-
-{
-
-	die("failed to connect!");
+$conn = mysqli_connect($server,$database,$password,$dbname);
+if(!$conn){
+	die ("Connection failed".mysqli_connect_error());
 }
 ?>

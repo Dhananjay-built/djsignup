@@ -13,7 +13,7 @@ session_start();
 		$Email = $_POST['Email'];
 		$password = $_POST['password'];
 		
-	$sql=mysqli_query($con,"SELECT * FROM `users`  WHERE Email='$Email'");
+	$sql=mysqli_query($conn,"SELECT * FROM `users`  WHERE Email='$Email'");
 	if(mysqli_num_rows($sql)>0)
 	{
 		echo "Email Id Already Exists"; 
